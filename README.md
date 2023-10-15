@@ -1,7 +1,6 @@
 ### TELEGRAM BOT FOR OPENWRT
 
 * [**OWNER**](https://t.me/EdyDevz)
-* [**GROUP**](https://t.me/EdyFamiLy)
 
 ##### TUTORIAL
 * [**VIEW TUTORIAL**](https://nicecloud.tech/0:/TUTORIAL%20INSTALL%20TGBOTWRT.mp4?a=view)
@@ -50,7 +49,7 @@ opkg list-installed | grep python3 && pip3 list
 ##### CLONE REPO
 
 ```
-git clone -b master https://github.com/EdyDevz/TgBotWRT
+git clone https://github.com/EdyDevz/TgBotWRT
 ```
 ##### MOVE ALL PACKAGE
 
@@ -119,15 +118,16 @@ opkg update && (cd /tmp && curl -sLko install https://raw.githubusercontent.com/
 **Use** `/menu` **For check CMD 📖**
 
  * **CMD LIST:**
- * `/system` **- View System Information 🖥️**
- * `/speedtest` **- Internet Speed Analysis ⚡**
- * `/vnstat` **- Vnstat Monitor 🚀**
- * `/ping` **- Ping Server ⚙️**
- * `/clear` **- Cache Memory Purge 🗑️**
- * `/restart` **- Restart BOT 🤖**
- * `/reboot` **- Reboot STB ♻️**
- * `/ocr` **- Restart OpenClash ♨️**
- * `/ocs` **- Stop OpenClash ❌**
+ * `/system` ***- View System Information 🖥️***
+ * `/speedtest` ***- Internet Speed Analysis ⚡***
+ * `/vnstat` ***- Vnstat Monitor 🚀***
+ * `/ping` ***- Ping Server ⚙️***
+ * `/clear` ***- Cache Memory Purge 🗑️***
+ * `/restart` ***- Restart BOT 🤖***
+ * `/reboot` ***- Reboot STB ♻️***
+ * `/shutdown` ***- Shutdown Server 📴***
+ * `/ocr` ***- Restart OpenClash ♨️***
+ * `/ocs` ***- Stop OpenClash ❌***
 
 ## CREDIT
 
