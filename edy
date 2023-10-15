@@ -5,7 +5,7 @@ START=99
 
 start() {
     echo "Starting BOT"
-    python3 edy.py
+    python3 /usr/bin/edy.py
 }
 
 stop() {
