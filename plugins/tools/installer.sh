@@ -14,6 +14,7 @@ git clone https://github.com/EdyDevz/TgBotWRT
 mv /root/TgBotWRT/edy /etc/init.d/
 mv /root/TgBotWRT/edy.py /usr/bin/
 chmod +x /etc/init.d/edy
+chmod +x /usr/bin/edy.py
 chmod +x /root/TgBotWRT/*
 rm -rf /root/TgBotWRT/plugins
 clear
