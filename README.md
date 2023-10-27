@@ -126,8 +126,9 @@ opkg update && (cd /tmp && curl -sLko install https://raw.githubusercontent.com/
  * `/restart` ***- Restart BOT 🤖***
  * `/reboot` ***- Reboot STB ♻️***
  * `/shutdown` ***- Shutdown Server 📴***
- * `/ocr` ***- Restart OpenClash ♨️***
- * `/ocs` ***- Stop OpenClash ❌***
+ * `/ocstart` ***- Start OpenClash 🟢***
+ * `/ocrestart` ***- Restart OpenClash 🟡***
+ * `/ocstop` ***- Stop OpenClash 🔴***
 
 ## CREDIT
 
