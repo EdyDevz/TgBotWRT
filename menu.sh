@@ -9,10 +9,10 @@ SCRIPTS["vnstat"]="https://raw.githubusercontent.com/EdyDevz/TgBotWRT/master/plu
 SCRIPTS["restart"]="https://raw.githubusercontent.com/EdyDevz/TgBotWRT/master/plugins/tools/menu/restart.sh"
 SCRIPTS["reboot"]="https://raw.githubusercontent.com/EdyDevz/TgBotWRT/master/plugins/tools/menu/reboot.sh"
 SCRIPTS["shutdown"]="https://raw.githubusercontent.com/EdyDevz/TgBotWRT/master/plugins/tools/menu/shutdown.sh"
-SCRIPTS["ocr"]="https://raw.githubusercontent.com/EdyDevz/TgBotWRT/master/plugins/tools/menu/ocr.sh"
-SCRIPTS["ocs"]="https://raw.githubusercontent.com/EdyDevz/TgBotWRT/master/plugins/tools/menu/ocs.sh"
+SCRIPTS["ocstart"]="https://raw.githubusercontent.com/EdyDevz/TgBotWRT/master/plugins/tools/menu/ocstart.sh"
+SCRIPTS["ocrestart"]="https://raw.githubusercontent.com/EdyDevz/TgBotWRT/master/plugins/tools/menu/ocrestart.sh"
+SCRIPTS["ocstop"]="https://raw.githubusercontent.com/EdyDevz/TgBotWRT/master/plugins/tools/menu/ocstop.sh"
 SCRIPTS["clear"]="https://raw.githubusercontent.com/EdyDevz/TgBotWRT/master/plugins/tools/menu/clear.sh"
-SCRIPTS["license"]="https://raw.githubusercontent.com/EdyDevz/TgBotWRT/master/plugins/tools/license.sh"
 # Tambahkan judul dan URL lain sesuai kebutuhan
 
 # Memeriksa apakah argumen yang diberikan adalah judul yang valid
