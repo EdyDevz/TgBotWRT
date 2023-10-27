@@ -8,6 +8,7 @@ get_ram_status() {
     # Membersihkan cache RAM
     sync
     echo 3 > /proc/sys/vm/drop_caches
+    rm -rf /tmp/luci*
     
     free_ram_after=$(free -m | awk 'NR==2{print $7}')
     erased_ram=$((free_ram_before - free_ram_after))
