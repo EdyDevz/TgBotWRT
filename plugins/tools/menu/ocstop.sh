@@ -1,5 +1,7 @@
 #!/bin/bash
 
+service openclash stop
+
 # READ AUTH
 if [ -f "/root/TgBotWRT/AUTH" ]; then
     IFS=$'\n' read -d '' -r -a lines < "/root/TgBotWRT/AUTH"
@@ -20,5 +22,3 @@ MSG="𝙎𝙏𝙊𝙋 𝙊𝙋𝙀𝙉𝘾𝙇𝘼𝙎𝙃 𝙎𝙐𝘾𝘾𝙀�
 
 # Kirim pesan notifikasi ke bot Telegram
 curl -s -X POST "https://api.telegram.org/bot$BOT_TOKEN/sendMessage" -d "chat_id=$CHAT_ID" -d "text=$MSG"
-
-service openclash stop
