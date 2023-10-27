@@ -64,7 +64,7 @@ if [ $? -eq 0 ]; then
 "
 else
     # Jika speedtest gagal, maka mengirimkan pesan notifikasi
-    message="⚠️  𝙈𝙖𝙖𝙛, 𝙨𝙖𝙖𝙩 𝙞𝙣𝙞 𝙇𝙀𝙇𝙐𝙃𝙐𝙍 𝙀𝘿𝙔 𝙨𝙚𝙙𝙖𝙣𝙜 𝙢𝙖𝙡𝙖𝙨. ⚠️"
+    message="𝙀𝘿𝙔 𝙎𝙀𝘿𝘼𝙉𝙂 𝙆𝙀𝙇𝙊𝙉....."
 fi
 
 # Mengirim pesan ke akun Telegram pribadi
