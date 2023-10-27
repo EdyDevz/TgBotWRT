@@ -49,5 +49,3 @@ $ram_status
 
 # Kirim pesan notifikasi ke bot Telegram
 curl -s -X POST "https://api.telegram.org/bot$TOKEN/sendMessage" -d "chat_id=$chat_id_admin" -d "text=$pesan_notifikasi"
-
-echo "Membersihkan RAM dan cache serta mengirim notifikasi selesai."
