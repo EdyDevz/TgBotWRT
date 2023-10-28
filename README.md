@@ -9,9 +9,10 @@
 ### NOTE❗
 ***TUTORIAL UDAH LENGKAP NJENG! GAUSAH BANYAK TANYA! BACA SAMPE KELAR BIAR PAHAM!!!***
 
-### REQUIREMEN
+### REQUIREMENTS
 
 `git`,`git-http`,`python3`,`python3-pip`,`jq`,`sysstat`,`telepot`,`python-telegram-bot`,`ookla-speedtest-1.1.1`
+
 
 
 ##### MANUAL INSTALL 😎
