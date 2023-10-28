@@ -3,8 +3,7 @@
 * [**OWNER**](https://t.me/EdyDevz)
 
 ##### TUTORIAL
-* [**VIEW TUTORIAL**](https://nicecloud.tech/0:/TUTORIAL%20INSTALL%20TGBOTWRT.mp4?a=view)
-* [**DOWNLOAD VIDEO**](https://nicecloud.tech/0:/TUTORIAL%20INSTALL%20TGBOTWRT.mp4)
+* [**VIEW ON YOUTUBE**](https://youtu.be/4zhOv0Ke_Vs?si=B2qRDOyYifILzSur)
 * [**VIEW ON TELEGRAM**](https://t.me/TrashLeech/48)
 
 ### NOTE❗
