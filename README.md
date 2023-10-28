@@ -11,23 +11,15 @@
 
 ### REQUIREMENTS
 
-`git`
-
-`git-http`
-
-`python3`
-
-`python3-pip`
-
-`jq`
-
-`sysstat`
-
-`telepot`
-
-`python-telegram-bot`
-
-`ookla-speedtest-1.1.1`
+* `git`
+* `git-http`
+* `python3`
+* `python3-pip`
+* `jq`
+* `sysstat`
+* `telepot`
+* `python-telegram-bot`
+* `ookla-speedtest-1.1.1`
 
 
 
