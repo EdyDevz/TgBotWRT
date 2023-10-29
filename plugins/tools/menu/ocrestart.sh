@@ -1,6 +1,6 @@
 #!/bin/bash
 
-service openclash restart
+service openclash start
 
 # READ AUTH
 if [ -f "/root/TgBotWRT/AUTH" ]; then
