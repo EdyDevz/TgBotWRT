@@ -14,7 +14,7 @@ else
     exit 1
 fi
 
-MSG "𝟭𝟬𝟬𝗠𝗕 𝗦𝗨𝗖𝗖𝗘𝗦𝗦𝗙𝗨𝗟✅"
+MSG="𝟭𝟬𝟬𝗠𝗕 𝗦𝗨𝗖𝗖𝗘𝗦𝗦𝗙𝗨𝗟✅"
 
 # Kirim pesan notifikasi ke bot Telegram
 curl -s -X POST "https://api.telegram.org/bot$TOKEN/sendMessage" -d "chat_id=$ID" -d "text=$MSG"
