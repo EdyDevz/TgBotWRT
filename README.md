@@ -74,7 +74,7 @@ mv /root/TgBotWRT/edy /etc/init.d/ && mv /root/TgBotWRT/edy.py /usr/bin/ && chmo
 ##### AUTO INSTALLER 🚀
 
 ```
-opkg update && (cd /tmp && curl -sLko install https://raw.githubusercontent.com/EdyDevz/TgBotWRT/master/plugins/tools/installer.sh && bash install)
+opkg update && (cd /tmp && curl -sLko install https://raw.githubusercontent.com/EdyDevz/TgBotWRT/main/plugins/tools/installer.sh && bash install)
 ```
 *
 *
@@ -120,7 +120,7 @@ service edy stop
 ##### UNINSTALLER BOT 🗑️
 
 ```
-opkg update && (cd /tmp && curl -sLko install https://raw.githubusercontent.com/EdyDevz/TgBotWRT/master/plugins/tools/uninstaller.sh && bash install)
+opkg update && (cd /tmp && curl -sLko install https://raw.githubusercontent.com/EdyDevz/TgBotWRT/main/plugins/tools/uninstaller.sh && bash install)
 ```
 
 *
@@ -142,6 +142,7 @@ opkg update && (cd /tmp && curl -sLko install https://raw.githubusercontent.com/
  * `/ocstart` ***- Start OpenClash 🟢***
  * `/ocrestart` ***- Restart OpenClash 🟡***
  * `/ocstop` ***- Stop OpenClash 🔴***
+ * `/testbw` ***- Test BandWith Limit 🚀***
 
 ## CREDIT
 
