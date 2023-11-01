@@ -10,6 +10,7 @@
 /ocstart: bash /root/TgBotWRT/menu.sh ocstart
 /ocrestart: bash /root/TgBotWRT/menu.sh ocrestart
 /ocstop: bash /root/TgBotWRT/menu.sh ocstop
+/testbw: bash /root/TgBotWRT/menu.sh testbw
 /100MB: bash /root/TgBotWRT/menu.sh 100MB
 /1GB: bash /root/TgBotWRT/menu.sh 1GB
 /5GB: bash /root/TgBotWRT/menu.sh 5GB
