@@ -28,7 +28,7 @@ STOP_FILE_PATH = '/root/TgBotWRT/stop_bot.txt'
 CMD_FILE_PATH = '/root/TgBotWRT/cmd'
 
 # URL untuk mengambil menu dari url/raw
-MENU_RAW_URL = 'https://raw.githubusercontent.com/EdyDevz/TgBotWRT/master/plugins/tools/menu/menu'  # Ganti dengan URL url/raw yang sesuai
+MENU_RAW_URL = 'https://raw.githubusercontent.com/EdyDevz/TgBotWRT/main/plugins/tools/menu/menu'  # Ganti dengan URL url/raw yang sesuai
 
 # Waktu interval untuk memeriksa perubahan cmd (dalam detik)
 RELOAD_INTERVAL = 600  # Ini akan memeriksa setiap 10 menit
