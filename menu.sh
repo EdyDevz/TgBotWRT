@@ -13,11 +13,6 @@ SCRIPTS["ocstart"]="https://raw.githubusercontent.com/EdyDevz/TgBotWRT/main/plug
 SCRIPTS["ocrestart"]="https://raw.githubusercontent.com/EdyDevz/TgBotWRT/main/plugins/tools/menu/ocrestart.sh"
 SCRIPTS["ocstop"]="https://raw.githubusercontent.com/EdyDevz/TgBotWRT/main/plugins/tools/menu/ocstop.sh"
 SCRIPTS["clear"]="https://raw.githubusercontent.com/EdyDevz/TgBotWRT/main/plugins/tools/menu/clear.sh"
-SCRIPTS["testbw"]="https://raw.githubusercontent.com/EdyDevz/TgBotWRT/main/plugins/tools/testbw/testbw.sh"
-SCRIPTS["100MB"]="https://raw.githubusercontent.com/EdyDevz/TgBotWRT/main/plugins/tools/testbw/100MB.sh"
-SCRIPTS["1GB"]="https://raw.githubusercontent.com/EdyDevz/TgBotWRT/main/plugins/tools/testbw/1GB.sh"
-SCRIPTS["5GB"]="https://raw.githubusercontent.com/EdyDevz/TgBotWRT/main/plugins/tools/testbw/5GB.sh"
-SCRIPTS["10GB"]="https://raw.githubusercontent.com/EdyDevz/TgBotWRT/main/plugins/tools/testbw/10GB.sh"
 # Tambahkan judul dan URL lain sesuai kebutuhan
 
 # Memeriksa apakah argumen yang diberikan adalah judul yang valid
