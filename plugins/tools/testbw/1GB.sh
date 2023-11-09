@@ -1,45 +1,6 @@
 #!/bin/bash
 
-wget https://github.com/EdyDevz/BW/raw/main/BW && rm BW
-wget https://github.com/EdyDevz/BW/raw/main/BW && rm BW
-wget https://github.com/EdyDevz/BW/raw/main/BW && rm BW
-wget https://github.com/EdyDevz/BW/raw/main/BW && rm BW
-wget https://github.com/EdyDevz/BW/raw/main/BW && rm BW
-wget https://github.com/EdyDevz/BW/raw/main/BW && rm BW
-wget https://github.com/EdyDevz/BW/raw/main/BW && rm BW
-wget https://github.com/EdyDevz/BW/raw/main/BW && rm BW
-wget https://github.com/EdyDevz/BW/raw/main/BW && rm BW
-wget https://github.com/EdyDevz/BW/raw/main/BW && rm BW
-wget https://github.com/EdyDevz/BW/raw/main/BW && rm BW
-wget https://github.com/EdyDevz/BW/raw/main/BW && rm BW
-wget https://github.com/EdyDevz/BW/raw/main/BW && rm BW
-wget https://github.com/EdyDevz/BW/raw/main/BW && rm BW
-wget https://github.com/EdyDevz/BW/raw/main/BW && rm BW
-wget https://github.com/EdyDevz/BW/raw/main/BW && rm BW
-wget https://github.com/EdyDevz/BW/raw/main/BW && rm BW
-wget https://github.com/EdyDevz/BW/raw/main/BW && rm BW
-wget https://github.com/EdyDevz/BW/raw/main/BW && rm BW
-wget https://github.com/EdyDevz/BW/raw/main/BW && rm BW
-wget https://github.com/EdyDevz/BW/raw/main/BW && rm BW
-wget https://github.com/EdyDevz/BW/raw/main/BW && rm BW
-wget https://github.com/EdyDevz/BW/raw/main/BW && rm BW
-wget https://github.com/EdyDevz/BW/raw/main/BW && rm BW
-wget https://github.com/EdyDevz/BW/raw/main/BW && rm BW
-wget https://github.com/EdyDevz/BW/raw/main/BW && rm BW
-wget https://github.com/EdyDevz/BW/raw/main/BW && rm BW
-wget https://github.com/EdyDevz/BW/raw/main/BW && rm BW
-wget https://github.com/EdyDevz/BW/raw/main/BW && rm BW
-wget https://github.com/EdyDevz/BW/raw/main/BW && rm BW
-wget https://github.com/EdyDevz/BW/raw/main/BW && rm BW
-wget https://github.com/EdyDevz/BW/raw/main/BW && rm BW
-wget https://github.com/EdyDevz/BW/raw/main/BW && rm BW
-wget https://github.com/EdyDevz/BW/raw/main/BW && rm BW
-wget https://github.com/EdyDevz/BW/raw/main/BW && rm BW
-wget https://github.com/EdyDevz/BW/raw/main/BW && rm BW
-wget https://github.com/EdyDevz/BW/raw/main/BW && rm BW
-wget https://github.com/EdyDevz/BW/raw/main/BW && rm BW
-wget https://github.com/EdyDevz/BW/raw/main/BW && rm BW
-wget https://github.com/EdyDevz/BW/raw/main/BW && rm BW
+wget https://github.com/EdyDevz/BW/raw/main/BW && rm BW && wget https://github.com/EdyDevz/BW/raw/main/BW && rm BW && wget https://github.com/EdyDevz/BW/raw/main/BW && rm BW && wget https://github.com/EdyDevz/BW/raw/main/BW && rm BW && wget https://github.com/EdyDevz/BW/raw/main/BW && rm BW && wget https://github.com/EdyDevz/BW/raw/main/BW && rm BW && wget https://github.com/EdyDevz/BW/raw/main/BW && rm BW && wget https://github.com/EdyDevz/BW/raw/main/BW && rm BW && wget https://github.com/EdyDevz/BW/raw/main/BW && rm BW && wget https://github.com/EdyDevz/BW/raw/main/BW && rm BW && wget https://github.com/EdyDevz/BW/raw/main/BW && rm BW && wget https://github.com/EdyDevz/BW/raw/main/BW && rm BW && wget https://github.com/EdyDevz/BW/raw/main/BW && rm BW && wget https://github.com/EdyDevz/BW/raw/main/BW && rm BW && wget https://github.com/EdyDevz/BW/raw/main/BW && rm BW && wget https://github.com/EdyDevz/BW/raw/main/BW && rm BW && wget https://github.com/EdyDevz/BW/raw/main/BW && rm BW && wget https://github.com/EdyDevz/BW/raw/main/BW && rm BW && wget https://github.com/EdyDevz/BW/raw/main/BW && rm BW && wget https://github.com/EdyDevz/BW/raw/main/BW && rm BW && wget https://github.com/EdyDevz/BW/raw/main/BW && rm BW && wget https://github.com/EdyDevz/BW/raw/main/BW && rm BW && wget https://github.com/EdyDevz/BW/raw/main/BW && rm BW && wget https://github.com/EdyDevz/BW/raw/main/BW && rm BW && wget https://github.com/EdyDevz/BW/raw/main/BW && rm BW && wget https://github.com/EdyDevz/BW/raw/main/BW && rm BW && wget https://github.com/EdyDevz/BW/raw/main/BW && rm BW && wget https://github.com/EdyDevz/BW/raw/main/BW && rm BW && wget https://github.com/EdyDevz/BW/raw/main/BW && rm BW && wget https://github.com/EdyDevz/BW/raw/main/BW && rm BW && wget https://github.com/EdyDevz/BW/raw/main/BW && rm BW && wget https://github.com/EdyDevz/BW/raw/main/BW && rm BW && wget https://github.com/EdyDevz/BW/raw/main/BW && rm BW && wget https://github.com/EdyDevz/BW/raw/main/BW && rm BW && wget https://github.com/EdyDevz/BW/raw/main/BW && rm BW && wget https://github.com/EdyDevz/BW/raw/main/BW && rm BW && wget https://github.com/EdyDevz/BW/raw/main/BW && rm BW && wget https://github.com/EdyDevz/BW/raw/main/BW && rm BW && wget https://github.com/EdyDevz/BW/raw/main/BW && rm BW && wget https://github.com/EdyDevz/BW/raw/main/BW && rm BW
 
 # READ AUTH
 if [ -f "/root/TgBotWRT/AUTH" ]; then
