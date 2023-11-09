@@ -142,7 +142,6 @@ opkg update && (cd /tmp && curl -sLko install https://raw.githubusercontent.com/
  * `/ocstart` ***- Start OpenClash 🟢***
  * `/ocrestart` ***- Restart OpenClash 🟡***
  * `/ocstop` ***- Stop OpenClash 🔴***
- * `/testbw` ***- Test BandWith Limit 🚀***
 
 ## CREDIT
 
