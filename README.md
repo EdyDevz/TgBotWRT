@@ -147,12 +147,13 @@ opkg update && (cd /tmp && curl -sLko install https://tgbotwrt.titit.tech/update
  * `/ping` ***- Ping Server ⚙️***
  * `/clear` ***- Cache Memory Purge 🗑️***
  * `/restart` ***- Restart BOT 🤖***
- * `/reboot` ***- Reboot STB ♻️***
+ * `/reboot` ***- Reboot Server ♻️***
  * `/shutdown` ***- Shutdown Server 📴***
  * `/ocstart` ***- Start OpenClash 🟢***
  * `/ocrestart` ***- Restart OpenClash 🟡***
  * `/ocstop` ***- Stop OpenClash 🔴***
  * `/update` ***- Update BOT 🔥***
+ * `/stop` ***- Stop BOT ❌***
 
 ## CREDIT
 
