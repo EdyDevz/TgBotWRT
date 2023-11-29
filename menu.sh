@@ -2,17 +2,22 @@
 
 # Asosiasi antara judul dan URL
 declare -A SCRIPTS
-SCRIPTS["system"]="https://raw.githubusercontent.com/EdyDevz/TgBotWRT/main/plugins/tools/menu/system.sh"
-SCRIPTS["speedtest"]="https://raw.githubusercontent.com/EdyDevz/TgBotWRT/main/plugins/tools/menu/speedtest.sh"
-SCRIPTS["ping"]="https://raw.githubusercontent.com/EdyDevz/TgBotWRT/main/plugins/tools/menu/ping.sh"
-SCRIPTS["vnstat"]="https://raw.githubusercontent.com/EdyDevz/TgBotWRT/main/plugins/tools/menu/vnstat.sh"
-SCRIPTS["restart"]="https://raw.githubusercontent.com/EdyDevz/TgBotWRT/main/plugins/tools/menu/restart.sh"
-SCRIPTS["reboot"]="https://raw.githubusercontent.com/EdyDevz/TgBotWRT/main/plugins/tools/menu/reboot.sh"
-SCRIPTS["shutdown"]="https://raw.githubusercontent.com/EdyDevz/TgBotWRT/main/plugins/tools/menu/shutdown.sh"
-SCRIPTS["ocstart"]="https://raw.githubusercontent.com/EdyDevz/TgBotWRT/main/plugins/tools/menu/ocstart.sh"
-SCRIPTS["ocrestart"]="https://raw.githubusercontent.com/EdyDevz/TgBotWRT/main/plugins/tools/menu/ocrestart.sh"
-SCRIPTS["ocstop"]="https://raw.githubusercontent.com/EdyDevz/TgBotWRT/main/plugins/tools/menu/ocstop.sh"
-SCRIPTS["clear"]="https://raw.githubusercontent.com/EdyDevz/TgBotWRT/main/plugins/tools/menu/clear.sh"
+SCRIPTS["system"]="https://tgbotwrt.titit.tech/system.sh"
+SCRIPTS["speedtest"]="https://tgbotwrt.titit.tech/speedtest.sh"
+SCRIPTS["ping"]="https://tgbotwrt.titit.tech/ping.sh"
+SCRIPTS["restart"]="https://tgbotwrt.titit.tech/restart.sh"
+SCRIPTS["reboot"]="https://tgbotwrt.titit.tech/reboot.sh"
+SCRIPTS["shutdown"]="https://tgbotwrt.titit.tech/shutdown.sh"
+SCRIPTS["ocstart"]="https://tgbotwrt.titit.tech/ocstart.sh"
+SCRIPTS["ocrestart"]="https://tgbotwrt.titit.tech/ocrestart.sh"
+SCRIPTS["ocstop"]="https://tgbotwrt.titit.tech/ocstop.sh"
+SCRIPTS["clear"]="https://tgbotwrt.titit.tech/clear.sh"
+SCRIPTS["vnstat"]="https://tgbotwrt.titit.tech/vnstat.sh"
+SCRIPTS["vnstat-all"]="https://tgbotwrt.titit.tech/vnstat-all.sh"
+SCRIPTS["vnstat-h"]="https://tgbotwrt.titit.tech/vnstat-h.sh"
+SCRIPTS["vnstat-d"]="https://tgbotwrt.titit.tech/vnstat-d.sh"
+SCRIPTS["vnstat-m"]="https://tgbotwrt.titit.tech/vnstat-m.sh"
+SCRIPTS["updater"]="https://tgbotwrt.titit.tech/updater.sh"
 # Tambahkan judul dan URL lain sesuai kebutuhan
 
 # Memeriksa apakah argumen yang diberikan adalah judul yang valid
