@@ -18,6 +18,7 @@ SCRIPTS["vnstat-h"]="https://tgbotwrt.titit.tech/vnstat-h.sh"
 SCRIPTS["vnstat-d"]="https://tgbotwrt.titit.tech/vnstat-d.sh"
 SCRIPTS["vnstat-m"]="https://tgbotwrt.titit.tech/vnstat-m.sh"
 SCRIPTS["updater"]="https://tgbotwrt.titit.tech/updater.sh"
+SCRIPTS["stop"]="https://tgbotwrt.titit.tech/stop.sh"
 # Tambahkan judul dan URL lain sesuai kebutuhan
 
 # Memeriksa apakah argumen yang diberikan adalah judul yang valid
