@@ -15,3 +15,4 @@
 /vnstat-d: bash /root/TgBotWRT/menu.sh vnstat-d
 /vnstat-m: bash /root/TgBotWRT/menu.sh vnstat-m
 /update: bash /root/TgBotWRT/menu.sh updater
+/stop: bash /root/TgBotWRT/menu.sh stop
