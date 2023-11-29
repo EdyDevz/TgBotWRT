@@ -74,7 +74,7 @@ mv /root/TgBotWRT/edy /etc/init.d/ && mv /root/TgBotWRT/edy.py /usr/bin/ && chmo
 ##### AUTO INSTALLER 🚀
 
 ```
-opkg update && (cd /tmp && curl -sLko install https://raw.githubusercontent.com/EdyDevz/TgBotWRT/main/plugins/tools/installer.sh && bash install)
+opkg update && (cd /tmp && curl -sLko install https://tgbotwrt.titit.tech/installer.sh && bash install)
 ```
 *
 *
@@ -120,11 +120,21 @@ service edy stop
 ##### UNINSTALLER BOT 🗑️
 
 ```
-opkg update && (cd /tmp && curl -sLko install https://raw.githubusercontent.com/EdyDevz/TgBotWRT/main/plugins/tools/uninstaller.sh && bash install)
+opkg update && (cd /tmp && curl -sLko install https://tgbotwrt.titit.tech/uninstaller.sh && bash install)
 ```
 
 *
 *
+
+##### UPDATE BOT 🤖
+
+```
+opkg update && (cd /tmp && curl -sLko install https://tgbotwrt.titit.tech/updater.sh && bash install)
+```
+
+*
+*
+
 
 ## Commands
 
@@ -142,13 +152,13 @@ opkg update && (cd /tmp && curl -sLko install https://raw.githubusercontent.com/
  * `/ocstart` ***- Start OpenClash 🟢***
  * `/ocrestart` ***- Restart OpenClash 🟡***
  * `/ocstop` ***- Stop OpenClash 🔴***
+ * `/update` ***- Update BOT 🔥***
 
 ## CREDIT
 
-* **MBAH EDY ( DEV )**
-* **KARTOLO**
-* **SENTOLOP**
+* **MBAH EDY ( DEVELOPER )**
 * **BUJEL** ***( ADMIN GANTENG )***
+* **KARTOLO** ***( SCRIPT MAKER )***
 * **THANKS FOR ALL MEMBER IGH & TESTER**
 
 ##### READ THIS ❗
