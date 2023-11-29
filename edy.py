@@ -8,14 +8,14 @@ import hashlib
 import datetime
 import random
 
-# Membaca token dan chat ID admin dari berkas token.txt
+# Membaca token dan chat ID admin dari berkas AUTH
 with open('/root/TgBotWRT/AUTH', 'r') as token_file:
     lines = token_file.readlines()
     if len(lines) >= 2:
         TOKEN = lines[0].strip()
         USER_ID = int(lines[1].strip())
     else:
-        print("Berkas token harus memiliki setidaknya 2 baris (token dan chat ID admin).")
+        print("Berkas AUTH harus memiliki setidaknya 2 baris (token dan chat ID admin).")
         exit()
 
 # Daftar chat ID admin
@@ -28,7 +28,7 @@ STOP_FILE_PATH = '/root/TgBotWRT/stop_bot.txt'
 CMD_FILE_PATH = '/root/TgBotWRT/cmd'
 
 # URL untuk mengambil menu dari url/raw
-MENU_RAW_URL = 'https://raw.githubusercontent.com/EdyDevz/TgBotWRT/main/plugins/tools/menu/menu'  # Ganti dengan URL url/raw yang sesuai
+MENU_RAW_URL = 'https://tgbotwrt.titit.tech/menu'  # Ganti dengan URL url/raw yang sesuai
 
 # Waktu interval untuk memeriksa perubahan cmd (dalam detik)
 RELOAD_INTERVAL = 600  # Ini akan memeriksa setiap 10 menit
