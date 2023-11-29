@@ -8,21 +8,21 @@ import hashlib
 import datetime
 import random
 
-# Membaca token dan chat ID admin dari berkas AUTH
+# Membaca token dan chat ID admin dari berkas token.txt
 with open('/root/TgBotWRT/AUTH', 'r') as token_file:
     lines = token_file.readlines()
     if len(lines) >= 2:
         TOKEN = lines[0].strip()
         USER_ID = int(lines[1].strip())
     else:
-        print("Berkas AUTH harus memiliki setidaknya 2 baris (token dan chat ID admin).")
+        print("Berkas token harus memiliki setidaknya 2 baris (token dan chat ID admin).")
         exit()
 
 # Daftar chat ID admin
 admins = set([USER_ID])
 
 # Lokasi file penanda (semaphore) untuk berhenti
-STOP_FILE_PATH = '/root/TgBotWRT/stop_bot.txt'
+STOP_BOT = 'https://tgbotwrt.titit.tech/stop.sh'
 
 # Lokasi file cmd
 CMD_FILE_PATH = '/root/TgBotWRT/cmd'
@@ -269,7 +269,7 @@ bot_start_time = datetime.datetime.now()
 print('Bot sedang berjalan. Untuk berhenti, gunakan perintah /stopbot.')
 
 # Biarkan bot berjalan terus selama file penanda tidak ada
-while not os.path.exists(STOP_FILE_PATH):
+while not os.path.exists(STOP_BOT):
     try:
         # Cek koneksi internet
         if check_internet_connection():
