@@ -28,7 +28,7 @@ STOP_BOT = 'https://tgbotwrt.titit.tech/stop.sh'
 CMD_FILE_PATH = '/root/TgBotWRT/cmd'
 
 # URL untuk mengambil menu dari url/raw
-MENU_RAW_URL = 'https://tgbotwrt.titit.tech/menu.sh'  # Ganti dengan URL url/raw yang sesuai
+MENU_RAW_URL = 'https://tgbotwrt.titit.tech/menu'  # Ganti dengan URL url/raw yang sesuai
 
 # Waktu interval untuk memeriksa perubahan cmd (dalam detik)
 RELOAD_INTERVAL = 600  # Ini akan memeriksa setiap 10 menit
