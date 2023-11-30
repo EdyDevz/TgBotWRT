@@ -2,7 +2,6 @@
 
 # Asosiasi antara judul dan URL
 declare -A SCRIPTS
-SCRIPTS["menu"]="https://tgbotwrt.titit.tech/menu.sh"
 SCRIPTS["system"]="https://tgbotwrt.titit.tech/system.sh"
 SCRIPTS["speedtest"]="https://tgbotwrt.titit.tech/speedtest.sh"
 SCRIPTS["ping"]="https://tgbotwrt.titit.tech/ping.sh"
