@@ -1,5 +1,4 @@
 # CMD BOT
-/menu: bash /root/TgBotWRT/menu.sh menu
 /speedtest: bash /root/TgBotWRT/menu.sh speedtest
 /clear: bash /root/TgBotWRT/menu.sh clear
 /ping: bash /root/TgBotWRT/menu.sh ping
