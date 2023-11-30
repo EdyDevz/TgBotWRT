@@ -2,6 +2,7 @@
 
 # Asosiasi antara judul dan URL
 declare -A SCRIPTS
+SCRIPTS["menu"]="https://tgbotwrt.titit.tech/menu.sh"
 SCRIPTS["system"]="https://tgbotwrt.titit.tech/system.sh"
 SCRIPTS["speedtest"]="https://tgbotwrt.titit.tech/speedtest.sh"
 SCRIPTS["ping"]="https://tgbotwrt.titit.tech/ping.sh"
@@ -13,10 +14,9 @@ SCRIPTS["ocrestart"]="https://tgbotwrt.titit.tech/ocrestart.sh"
 SCRIPTS["ocstop"]="https://tgbotwrt.titit.tech/ocstop.sh"
 SCRIPTS["clear"]="https://tgbotwrt.titit.tech/clear.sh"
 SCRIPTS["vnstat"]="https://tgbotwrt.titit.tech/vnstat.sh"
-SCRIPTS["vnstat-all"]="https://tgbotwrt.titit.tech/vnstat-all.sh"
-SCRIPTS["vnstat-h"]="https://tgbotwrt.titit.tech/vnstat-h.sh"
 SCRIPTS["vnstat-d"]="https://tgbotwrt.titit.tech/vnstat-d.sh"
 SCRIPTS["vnstat-m"]="https://tgbotwrt.titit.tech/vnstat-m.sh"
+SCRIPTS["vnstat-y"]="https://tgbotwrt.titit.tech/vnstat-y.sh"
 SCRIPTS["updater"]="https://tgbotwrt.titit.tech/updater.sh"
 SCRIPTS["stop"]="https://tgbotwrt.titit.tech/stop.sh"
 # Tambahkan judul dan URL lain sesuai kebutuhan
