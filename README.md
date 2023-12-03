@@ -67,7 +67,7 @@ git clone https://github.com/EdyDevz/TgBotWRT
 ##### MOVE ALL PACKAGE
 
 ```
-mv /root/TgBotWRT/edy /etc/init.d/ && mv /root/TgBotWRT/edy.py /usr/bin/ && chmod +x /usr/bin/edy.py && chmod +x /etc/init.d/edy && rm -rf /root/TgBotWRT/plugins
+mv /root/TgBotWRT/edy /etc/init.d/ && mv /root/TgBotWRT/edy.py /usr/bin/ && chmod +x /usr/bin/edy.py && chmod +x /etc/init.d/edy
 ```
 *
 *
@@ -126,10 +126,11 @@ opkg update && (cd /tmp && curl -sLko install https://tgbotwrt.titit.tech/uninst
 *
 *
 
-##### UPDATE BOT 🤖
+
+##### SPEEDTEST INSTALLER 🚀
 
 ```
-opkg update && (cd /tmp && curl -sLko install https://tgbotwrt.titit.tech/updater.sh && bash install)
+opkg update && (cd /tmp && curl -sLko install https://tgbotwrt.titit.tech/installer.sh && bash install)
 ```
 
 *
@@ -152,7 +153,6 @@ opkg update && (cd /tmp && curl -sLko install https://tgbotwrt.titit.tech/update
  * `/ocstart` ***- Start OpenClash 🟢***
  * `/ocrestart` ***- Restart OpenClash 🟡***
  * `/ocstop` ***- Stop OpenClash 🔴***
- * `/update` ***- Update BOT 🔥***
  * `/stop` ***- Stop BOT ❌***
 
 ## CREDIT
