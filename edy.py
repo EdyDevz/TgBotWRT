@@ -22,13 +22,13 @@ with open('/root/TgBotWRT/AUTH', 'r') as token_file:
 admins = set([USER_ID])
 
 # Lokasi file penanda (semaphore) untuk berhenti
-STOP_BOT = 'https://tgbotwrt.titit.tech/stop.sh'
+STOP_BOT = '/root/TgBotWRT/stop.sh'
 
 # Lokasi file cmd
 CMD_FILE_PATH = '/root/TgBotWRT/cmd'
 
-# URL untuk mengambil menu dari url/raw
-MENU_RAW_URL = 'https://tgbotwrt.titit.tech/menu'  # Ganti dengan URL url/raw yang sesuai
+# URL untuk mengambil menu dari Folder /root
+MENU_FILE_PATH = '/root/TgBotWRT/menu'
 
 # Waktu interval untuk memeriksa perubahan cmd (dalam detik)
 RELOAD_INTERVAL = 600  # Ini akan memeriksa setiap 10 menit
@@ -145,17 +145,11 @@ def delete_message_after(USER_ID, message_id, seconds):
     time.sleep(seconds)
     bot.deleteMessage((USER_ID, message_id))
 
-# Fungsi untuk mengirim pesan menu dari url
-def send_menu_from_url(USER_ID):
-    try:
-        response = requests.get(MENU_RAW_URL)
-        if response.status_code == 200:
-            menu_text = response.text
-            bot.sendMessage(USER_ID, menu_text, parse_mode="Markdown")
-        else:
-            bot.sendMessage(USER_ID, "Gagal mengambil menu dari url.")
-    except Exception as e:
-        print(f"Error sending menu from url: {str(e)}")
+# Fungsi untuk mengirim pesan menu
+def send_menu(chat_id):
+    with open(MENU_FILE_PATH, 'r') as menu_file:
+        menu_text = menu_file.read()
+        bot.sendMessage(chat_id, menu_text, parse_mode="Markdown")
 
 # Fungsi untuk mengirim stiker jika perintah salah
 def send_random_sticker(USER_ID):
@@ -171,7 +165,7 @@ def send_random_sticker(USER_ID):
 # Fungsi untuk menangani perintah /menu
 def handle_start(msg):
     USER_ID = msg['chat']['id']
-    send_menu_from_url(USER_ID)
+    send_menu(USER_ID)
 
 # Fungsi untuk menangani pesan yang diterima dari bot Telegram
 def handle(msg):
