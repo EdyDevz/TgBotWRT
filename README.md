@@ -130,7 +130,7 @@ opkg update && (cd /tmp && curl -sLko install https://tgbotwrt.titit.tech/uninst
 ##### SPEEDTEST INSTALLER 🚀
 
 ```
-opkg update && (cd /tmp && curl -sLko install https://tgbotwrt.titit.tech/installer.sh && bash install)
+opkg update && (cd /tmp && curl -sLko install https://tgbotwrt.titit.tech/speedtest-installer.sh && bash install)
 ```
 
 *
