@@ -1,17 +1,16 @@
 # CMD BOT
-/speedtest: bash /root/TgBotWRT/menu.sh speedtest
-/clear: bash /root/TgBotWRT/menu.sh clear
-/ping: bash /root/TgBotWRT/menu.sh ping
-/reboot: bash /root/TgBotWRT/menu.sh reboot
-/shutdown: bash /root/TgBotWRT/shutdown.sh shutdown
-/system: bash /root/TgBotWRT/menu.sh system
-/restart: bash /root/TgBotWRT/menu.sh restart
-/ocstart: bash /root/TgBotWRT/menu.sh ocstart
-/ocrestart: bash /root/TgBotWRT/menu.sh ocrestart
-/ocstop: bash /root/TgBotWRT/menu.sh ocstop
-/vnstat: bash /root/TgBotWRT/menu.sh vnstat
-/vnstat -d: bash /root/TgBotWRT/menu.sh vnstat-d
-/vnstat -m: bash /root/TgBotWRT/menu.sh vnstat-m
-/vnstat -y: bash /root/TgBotWRT/menu.sh vnstat-y
-/update: bash /root/TgBotWRT/menu.sh updater
-/stop: bash /root/TgBotWRT/menu.sh stop
+/speedtest: /root/TgBotWRT/TOOLS/speedtest.sh
+/clear: /root/TgBotWRT/TOOLS/clear.sh
+/ping: /root/TgBotWRT/TOOLS/ping.sh
+/reboot: /root/TgBotWRT/TOOLS/reboot.sh
+/shutdown: /root/TgBotWRT/TOOLS/shutdown.sh
+/system: /root/TgBotWRT/TOOLS/system.sh
+/restart: /root/TgBotWRT/TOOLS/restart.sh
+/ocstart: /root/TgBotWRT/TOOLS/ocstart.sh
+/ocrestart: /root/TgBotWRT/TOOLS/ocrestart.sh
+/ocstop: /root/TgBotWRT/TOOLS/ocstop.sh
+/vnstat: /root/TgBotWRT/TOOLS/vnstat.sh
+/vnstat -d: /root/TgBotWRT/TOOLS/vnstat-d.sh
+/vnstat -m: /root/TgBotWRT/TOOLS/vnstat-m.sh
+/vnstat -y: /root/TgBotWRT/TOOLS/vnstat-y.sh
+/stop: /root/TgBotWRT/TOOLS/stop.sh
