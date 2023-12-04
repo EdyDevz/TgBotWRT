@@ -67,9 +67,17 @@ opkg list-installed | grep python3 && pip3 list
 ```
 ##### CLONE REPO
 
+
+**ONLINE SCRIPT**
 ```
-git clone https://github.com/EdyDevz/TgBotWRT
+git clone -b ONLINE https://github.com/EdyDevz/TgBotWRT
 ```
+
+**OFFLINE SCRIPT**
+```
+git clone -b OFFLINE https://github.com/EdyDevz/TgBotWRT
+```
+
 ##### MOVE ALL PACKAGE
 
 ```
