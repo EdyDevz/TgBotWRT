@@ -7,6 +7,7 @@ opkg install python3
 opkg install python3-pip
 opkg install jq
 opkg install sysstat
+opkg install nano
 pip3 install telepot requests python-telegram-bot
 opkg list-installed | grep python3
 pip3 list
