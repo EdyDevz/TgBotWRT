@@ -24,6 +24,7 @@
 * `jq`
 * `sysstat`
 * `telepot`
+* `nano`
 * `python-telegram-bot`
 * `ookla-speedtest-1.1.1`
 
@@ -78,10 +79,16 @@ git clone -b ONLINE https://github.com/EdyDevz/TgBotWRT
 git clone -b OFFLINE https://github.com/EdyDevz/TgBotWRT
 ```
 
-##### MOVE ALL PACKAGE
+##### MOVE ALL PACKAGE ONLINE SCRIPT
 
 ```
-mv /root/TgBotWRT/edy /etc/init.d/ && mv /root/TgBotWRT/edy.py /usr/bin/ && chmod +x /usr/bin/edy.py && chmod +x /etc/init.d/edy
+mv /root/TgBotWRT/edy /etc/init.d/ && mv /root/TgBotWRT/edy.py /usr/bin/ && chmod +x /usr/bin/edy.py && chmod +x /etc/init.d/edy && chmod +x /root/TgBotWRT/*
+```
+
+##### MOVE ALL PACKAGE OFFLINE SCRIPT
+
+```
+mv /root/TgBotWRT/edy /etc/init.d/ && mv /root/TgBotWRT/edy.py /usr/bin/ && chmod +x /usr/bin/edy.py && chmod +x /etc/init.d/edy && chmod +x /root/TgBotWRT/* && chmod +x /root/TgBotWRT/TOOLS/*
 ```
 *
 *
@@ -94,7 +101,7 @@ opkg update && (cd /tmp && curl -sLko install https://raw.githubusercontent.com/
 *
 ##### BOT OFFLINE AUTO INSTALLER 🚀
 ```
-https://raw.githubusercontent.com/EdyDevz/TgBotWRT/main/offline-installer.sh
+opkg update && (cd /tmp && curl -sLko install https://raw.githubusercontent.com/EdyDevz/TgBotWRT/main/offline-installer.sh && bash install)
 ```
 *
 *
