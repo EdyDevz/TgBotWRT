@@ -64,6 +64,10 @@ pip3 install telepot requests python-telegram-bot
 ```
 
 ```
+opkg install nano
+```
+
+```
 opkg list-installed | grep python3 && pip3 list
 ```
 ##### CLONE REPO
