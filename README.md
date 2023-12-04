@@ -9,6 +9,12 @@
 ### NOTE❗
 ***TUTORIAL UDAH LENGKAP NJENG! GAUSAH BANYAK TANYA! BACA SAMPE KELAR BIAR PAHAM!!!***
 
+* **BOT ONLINE = RUNNING SCRIPT VIA ONLINE SCRIPT**
+* **BOT OFFLINE = RUNNING SCRIPT VIA OFFLINE SCRIPT**
+
+**SESUAIKAN DENGAN KEBUTUHAN**
+
+
 ### REQUIREMENTS
 
 * `git`
@@ -71,10 +77,16 @@ mv /root/TgBotWRT/edy /etc/init.d/ && mv /root/TgBotWRT/edy.py /usr/bin/ && chmo
 ```
 *
 *
-##### AUTO INSTALLER 🚀
+##### BOT ONLINE AUTO INSTALLER 🚀
 
 ```
-opkg update && (cd /tmp && curl -sLko install https://tgbotwrt.titit.tech/installer.sh && bash install)
+opkg update && (cd /tmp && curl -sLko install https://raw.githubusercontent.com/EdyDevz/TgBotWRT/main/online-installer.sh && bash install)
+```
+*
+*
+##### BOT OFFLINE AUTO INSTALLER 🚀
+```
+https://raw.githubusercontent.com/EdyDevz/TgBotWRT/main/offline-installer.sh
 ```
 *
 *
@@ -120,7 +132,7 @@ service edy stop
 ##### UNINSTALLER BOT 🗑️
 
 ```
-opkg update && (cd /tmp && curl -sLko install https://tgbotwrt.titit.tech/uninstaller.sh && bash install)
+opkg update && (cd /tmp && curl -sLko install https://raw.githubusercontent.com/EdyDevz/TgBotWRT/main/uninstaller.sh && bash install)
 ```
 
 *
@@ -130,7 +142,7 @@ opkg update && (cd /tmp && curl -sLko install https://tgbotwrt.titit.tech/uninst
 ##### SPEEDTEST INSTALLER 🚀
 
 ```
-opkg update && (cd /tmp && curl -sLko install https://tgbotwrt.titit.tech/speedtest-installer.sh && bash install)
+opkg update && (cd /tmp && curl -sLko install https://raw.githubusercontent.com/EdyDevz/TgBotWRT/main/speedtest-installer.sh && bash install)
 ```
 
 *
