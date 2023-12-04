@@ -60,11 +60,11 @@ opkg install sysstat
 ```
 
 ```
-pip3 install telepot requests python-telegram-bot
+opkg install nano
 ```
 
 ```
-opkg install nano
+pip3 install telepot requests python-telegram-bot
 ```
 
 ```
