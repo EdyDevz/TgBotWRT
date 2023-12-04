@@ -22,13 +22,13 @@ with open('/root/TgBotWRT/AUTH', 'r') as token_file:
 admins = set([USER_ID])
 
 # Lokasi file penanda (semaphore) untuk berhenti
-STOP_BOT = '/root/TgBotWRT/stop.sh'
+STOP_FILE_PATH = 'https://raw.githubusercontent.com/EdyDevz/TgBotWRT/OFFLINE/TOOLS/stop.sh'
 
 # Lokasi file cmd
 CMD_FILE_PATH = '/root/TgBotWRT/cmd'
 
-# URL untuk mengambil menu dari Folder /root
-MENU_FILE_PATH = '/root/TgBotWRT/menu'
+# URL untuk mengambil menu dari url/raw
+MENU_RAW_URL = 'https://raw.githubusercontent.com/EdyDevz/TgBotWRT/OFFLINE/menu'  # Ganti dengan URL url/raw yang sesuai
 
 # Waktu interval untuk memeriksa perubahan cmd (dalam detik)
 RELOAD_INTERVAL = 600  # Ini akan memeriksa setiap 10 menit
@@ -145,11 +145,17 @@ def delete_message_after(USER_ID, message_id, seconds):
     time.sleep(seconds)
     bot.deleteMessage((USER_ID, message_id))
 
-# Fungsi untuk mengirim pesan menu
-def send_menu(chat_id):
-    with open(MENU_FILE_PATH, 'r') as menu_file:
-        menu_text = menu_file.read()
-        bot.sendMessage(chat_id, menu_text, parse_mode="Markdown")
+# Fungsi untuk mengirim pesan menu dari url
+def send_menu_from_url(USER_ID):
+    try:
+        response = requests.get(MENU_RAW_URL)
+        if response.status_code == 200:
+            menu_text = response.text
+            bot.sendMessage(USER_ID, menu_text, parse_mode="Markdown")
+        else:
+            bot.sendMessage(USER_ID, "Gagal mengambil menu dari url.")
+    except Exception as e:
+        print(f"Error sending menu from url: {str(e)}")
 
 # Fungsi untuk mengirim stiker jika perintah salah
 def send_random_sticker(USER_ID):
@@ -165,7 +171,7 @@ def send_random_sticker(USER_ID):
 # Fungsi untuk menangani perintah /menu
 def handle_start(msg):
     USER_ID = msg['chat']['id']
-    send_menu(USER_ID)
+    send_menu_from_url(USER_ID)
 
 # Fungsi untuk menangani pesan yang diterima dari bot Telegram
 def handle(msg):
@@ -260,10 +266,10 @@ current_cmd_file_hash = get_file_md5_hash(CMD_FILE_PATH)
 # Set waktu mulai bot saat ini
 bot_start_time = datetime.datetime.now()
 
-print('Bot sedang berjalan. Untuk berhenti, gunakan perintah /stop')
+print('Bot sedang berjalan. Untuk berhenti, gunakan perintah /stopbot.')
 
 # Biarkan bot berjalan terus selama file penanda tidak ada
-while not os.path.exists(STOP_BOT):
+while not os.path.exists(STOP_FILE_PATH):
     try:
         # Cek koneksi internet
         if check_internet_connection():
@@ -282,3 +288,4 @@ while not os.path.exists(STOP_BOT):
 
 # Bot berhenti jika file penanda ada
 print('Bot berhenti.')
+
