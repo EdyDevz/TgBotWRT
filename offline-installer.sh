@@ -1,6 +1,8 @@
 #!/bin/bash
 
 cd
+echo "INSTALLING REQUIREMENTS"
+sleep 5
 opkg install git
 opkg install git-http
 opkg install python3
@@ -17,6 +19,9 @@ mv /root/TgBotWRT/edy.py /usr/bin/
 chmod +x /etc/init.d/edy
 chmod +x /usr/bin/edy.py
 chmod +x /root/TgBotWRT/*
+chmod +x /root/TgBotWRT/TOOLS/*
+echo "REQUIREMENTS SUCCESSFULLY INSTALLED"
+sleep 5
 clear
 echo "JANGAN LUPA ISI BOT TOKEN DAN ID TELEGRAM YA ANJING"
 sleep 10
