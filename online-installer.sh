@@ -8,6 +8,8 @@ opkg install python3-pip
 opkg install jq
 opkg install sysstat
 opkg install nano
+opkg install bash
+opkg install curl
 pip3 install telepot requests python-telegram-bot
 opkg list-installed | grep python3
 pip3 list
@@ -18,11 +20,13 @@ chmod +x /etc/init.d/edy
 chmod +x /usr/bin/edy.py
 chmod +x /root/TgBotWRT/*
 chmod +x /root/TgBotWRT/TOOLS/*
+echo "REQUIREMENTS SUCCESSFULLY INSTALLED"
+sleep 3
 clear
 echo "JANGAN LUPA ISI BOT TOKEN DAN ID TELEGRAM YA ANJING"
-sleep 10
+sleep 3
 echo "TUTORIAL DAH LENGKAP JANGAN BANYAK TANYA YA ANJING"
-sleep 10
+sleep 5
 clear
 nano /root/TgBotWRT/AUTH
 echo "PLEASE WAIT....."
