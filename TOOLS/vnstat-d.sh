@@ -17,14 +17,12 @@ get_daily_bandwidth() {
     total=$(echo "$vnstat_output" | awk '{print $8, $9}')
     
     echo "
-➤ 𝗕𝗔𝗡𝗗𝗪𝗜𝗗𝗧𝗛 𝗗𝗔𝗜𝗟𝗬 𝗥𝗘𝗣𝗢𝗥𝗧 📊
-
-📥 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗: $download
-📤 𝗨𝗣𝗟𝗢𝗔𝗗: $upload
-📊 𝗧𝗢𝗧𝗔𝗟: $total
-⏰ 𝗟𝗔𝗦𝗧 𝗨𝗣𝗗𝗔𝗧𝗘: $(date +'%d-%m-%Y %I:%M %p')
-
-➤ 𝘾𝙝𝙚𝙘𝙠𝙚𝙙 𝙗𝙮 𝙀𝙙𝙮 𝘿𝙚𝙫𝙚𝙡𝙤𝙥𝙚𝙧 🤖
+❏ BANDWIDTH DAILY REPORT 📊
+└ DOWNLOAD: $download
+└ UPLOAD: $upload
+└ TOTAL: $total
+└ LAST UPDATE: $(date +'%d-%m-%Y %I:%M %p')
+└ CHECKED BY EDY DEVELOPER
 "
 }
 
@@ -33,6 +31,6 @@ get_ip_info
 MSG=$(get_daily_bandwidth)
 
 # Mengirim pesan ke akun Telegram pribadi
-URL="https://tgbotwrt.titit.tech/edy.jpg"
+URL="https://tgbotwrt.titit.tech/bot.jpg"
 curl -F "chat_id=$CHAT_ID" -F "caption=$MSG" -F "photo=$URL" \
 https://api.telegram.org/bot$BOT_TOKEN/sendphoto

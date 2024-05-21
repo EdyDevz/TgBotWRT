@@ -11,14 +11,13 @@ fi
 
 # Generate the system status report
 MSG="
-➤ 𝙑𝙉𝙎𝙏𝘼𝙏 📊
-
-➤ /vnstat -d - 𝘿𝘼𝙄𝙇𝙔 𝘿𝘼𝙏𝘼 𝙐𝙎𝘼𝙂𝙀 📊
-➤ /vnstat -m - 𝙈𝙊𝙉𝙏𝙃𝙇𝙔 𝘿𝘼𝙏𝘼 𝙐𝙎𝘼𝙂𝙀 📊
-➤ /vnstat -y - 𝙔𝙀𝘼𝙍𝙇𝙔 𝘿𝘼𝙏𝘼 𝙐𝙎𝘼𝙂𝙀 📊
+❏ VNSTAT 📊
+└ /vnstat -d - DAILY DATA USAGE
+└ /vnstat -m - MONTHLY DATA USAGE
+└ /vnstat -y - YEARLY DATA USAGE
 "
 
 # Mengirim pesan ke akun Telegram pribadi
-URL="https://tgbotwrt.titit.tech/edy.jpg"
+URL="https://tgbotwrt.titit.tech/bot.jpg"
 curl -F "chat_id=$CHAT_ID" -F "caption=$MSG" -F "photo=$URL" \
 https://api.telegram.org/bot$BOT_TOKEN/sendphoto

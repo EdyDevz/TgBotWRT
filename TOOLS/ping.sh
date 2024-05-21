@@ -18,9 +18,9 @@ do
     result=$(ping -c 1 $SERVER)
     if [ $? -eq 0 ]; then
         ping=$(echo "$result" | awk -F'/' 'END {printf "%.0f", $5}')
-        messages+=("➤ PING❗$ping ms..")
+        messages+=("❏ PING❗$ping ms..")
     else
-        messages+=("➤ FAILED ❌")
+        messages+=("❏ FAILED ❌")
         failed=$((failed_count + 1))
     fi
 done

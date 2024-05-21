@@ -34,26 +34,24 @@ if [ $? -eq 0 ]; then
 
     # Membuat pesan dengan format yang diinginkan jika speedtest berhasil
     MSG="
-➤ 𝙀𝘿𝙔 𝙎𝙋𝙀𝙀𝘿𝙏𝙀𝙎𝙏 𝙏𝙊𝙊𝙇𝙎 ⚡
-
-🏠 𝗛𝗢𝗦𝗧: $(uci get system.@system[0].hostname | tr -d '\0')
-🛸 𝗣𝗜𝗡𝗚: $ping ms
-🌐 𝗜𝗣: $ip
-🛰️ 𝗦𝗘𝗥𝗩𝗘𝗥: $server_name
-⛱️ 𝗜𝗦𝗣: $org
-🌍 𝗥𝗘𝗚𝗜𝗢𝗡: $timezone
-📥 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗: $download Mbps
-📤 𝗨𝗣𝗟𝗢𝗔𝗗: $upload Mbps 
-📊 𝗥𝗘𝗦𝗨𝗟𝗧: $result_url
-
-➤ 𝗟𝗔𝗦𝗧 𝗨𝗣𝗗𝗔𝗧𝗘: $current_time
+❏ EDY SPEEDTEST TOOLS ⚡
+└ HOST: $(uci get system.@system[0].hostname | tr -d '\0')
+└ PING: $ping ms
+└ IP: $ip
+└ SERVER: $server_name
+└ ISP: $org
+└ REGION: $timezone
+└ DOWNLOAD: $download Mbps
+└ UPLOAD: $upload Mbps 
+└ RESULT: $result_url
+└ LAST UPDATE: $current_time
 "
 else
     # Jika speedtest gagal, maka mengirimkan pesan notifikasi
-    MSG="𝙀𝘿𝙔 𝙎𝙀𝘿𝘼𝙉𝙂 𝙆𝙀𝙇𝙊𝙉....."
+    MSG="SERVER RUSAK MEK"
 fi
 
 # Mengirim pesan ke akun Telegram pribadi
-URL="https://tgbotwrt.titit.tech/edy.jpg"
+URL="https://tgbotwrt.titit.tech/bot.jpg"
 curl -F "chat_id=$CHAT_ID" -F "caption=$MSG" -F "photo=$URL" \
 https://api.telegram.org/bot$BOT_TOKEN/sendphoto

@@ -12,9 +12,9 @@ else
 fi
 
 # Buat pesan notifikasi
-MSG="➤ 𝙎𝙏𝙊𝙋 𝙊𝙋𝙀𝙉𝘾𝙇𝘼𝙎𝙃 𝙎𝙐𝘾𝘾𝙀𝙎𝙎𝙁𝙐𝙇"
+MSG="❏ OC STOPPED ❏"
 
 # Mengirim pesan ke akun Telegram pribadi
-URL="https://tgbotwrt.titit.tech/edy.jpg"
+URL="https://tgbotwrt.titit.tech/bot.jpg"
 curl -F "chat_id=$CHAT_ID" -F "caption=$MSG" -F "photo=$URL" \
 https://api.telegram.org/bot$BOT_TOKEN/sendphoto

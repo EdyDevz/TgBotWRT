@@ -13,10 +13,10 @@ get_ram_status() {
     free_ram_after=$(free -m | awk 'NR==2{print $7}')
     erased_ram=$((free_ram_before - free_ram_after))
     
-    echo "💾 𝘼𝙫𝙖𝙞𝙡𝙖𝙗𝙡𝙚 𝙍𝙖𝙢 ☞ $total_ram MB"
-    echo "📊 𝘽𝙀𝙁𝙊𝙍𝙀 ☞ $free_ram_before MB"
-    echo "📈 𝘼𝙁𝙏𝙀𝙍 ☞ $free_ram_after MB"
-    echo "♻️ 𝙍𝘼𝙈 𝙀𝙧𝙖𝙨𝙚𝙙 ☞ $erased_ram MB"
+    echo "└ Available Ram: $total_ram MB"
+    echo "└ Before: $free_ram_before MB"
+    echo "└ After: $free_ram_after MB"
+    echo "└ RAM Erased: $erased_ram MB"
 }
 
 # READ AUTH
@@ -36,14 +36,12 @@ date=$(date "+%d-%m-%Y %I:%M %p")
 
 # Buat pesan notifikasi
 MSG="
-➤ 𝙍𝘼𝙈 𝙎𝙪𝙥𝙚𝙧𝙘𝙝𝙖𝙧𝙜𝙚 🚀
-
+❏ RAM SUPERCHARGE 🚀
 $ram_status
-
-➤ 𝗟𝗔𝗦𝗧 𝗨𝗣𝗗𝗔𝗧𝗘: $date
+└LAST UPDATE: $date
 "
 
 # Mengirim pesan ke akun Telegram pribadi
-URL="https://tgbotwrt.titit.tech/edy.jpg"
+URL="https://tgbotwrt.titit.tech/bot.jpg"
 curl -F "chat_id=$CHAT_ID" -F "caption=$MSG" -F "photo=$URL" \
 https://api.telegram.org/bot$BOT_TOKEN/sendphoto
