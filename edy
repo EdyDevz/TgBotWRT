@@ -1,5 +1,5 @@
 #!/bin/sh /etc/rc.common
-# Copyright (C) 2023 EDYDEV
+# Copyright (C) 2023 - 2024 EDYDEVZ
 
 START=99
 
