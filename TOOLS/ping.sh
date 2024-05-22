@@ -10,7 +10,7 @@ else
 fi
 
 # Daftar server yang akan di-ping beserta alias-aliasnya
-servers=("1.1.1.1:Cloudflare" "8.8.8.8:Google DNS" "google.com:Google" "facebook.com:Facebook" "twitter.com:Twitter" "youtube.com:YouTube" "github.com:GitHub")
+servers=("1.1.1.1:└ Cloudflare" "8.8.8.8:└ Google DNS" "google.com:└ Google" "facebook.com:└ Facebook" "twitter.com:└ Twitter" "youtube.com:└ YouTube" "github.com:└ GitHub" "pornhub.com:└ Bokep")
 
 # Inisialisasi variabel untuk menyimpan status setiap server
 status_messages=()
@@ -38,34 +38,31 @@ do
         response_time=$(echo "$result" | awk -F'/' 'END {printf "%.0f", $5}')  # Memformat tanpa desimal
         emoji="🌐"
         case "$server_alias" in
-            "Google DNS")
+            "└ Google DNS")
                 emoji="🔍"
                 ;;
-            "Google")
+            "└ Google")
                 emoji="🔵"
                 ;;
-            "Facebook")
+            "└ Facebook")
                 emoji="📘"
                 ;;
-            "Twitter")
+            "└ Twitter")
                 emoji="🐦"
                 ;;
-            "YouTube")
+            "└ YouTube")
                 emoji="📺"
                 ;;
-            "GitHub")
+            "└ GitHub")
                 emoji="🐱"
                 ;;
-            "Bokep")
+            "└ Bokep")
                 emoji="🤤"
                 ;;
-            "AWS")
-                emoji="💻"
-                ;;
         esac
-        status_messages+=("$emoji $server_alias ✅ $response_time ms")
+        status_messages+=("$server_alias $emoji ➤ $response_time ms")
     else
-        status_messages+=("$server_alias ❌")
+        status_messages+=("$server_alias $emoji ➤ ❌")
         failed_count=$((failed_count + 1))
     fi
 done
@@ -79,9 +76,11 @@ done
 
 # Buat pesan notifikasi berdasarkan jumlah server yang aman atau tidak aman
 if [ $failed_count -eq 0 ]; then
-    MSG+="GOOD SERVER ✅"
+    MSG+="
+GOOD SERVER ✅"
 else
-    MSG+="BAD SERVER ❗"
+    MSG+="
+BAD SERVER❗"
 fi
 
 # Kirim notifikasi ke pengguna berdasarkan user ID
