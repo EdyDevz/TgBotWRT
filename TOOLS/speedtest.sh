@@ -44,11 +44,13 @@ if [ $? -eq 0 ]; then
 └ DOWNLOAD: $download Mbps
 └ UPLOAD: $upload Mbps 
 └ RESULT: $result_url
-└ LAST UPDATE: $current_time
+└ DATE: $current_time
 "
 else
     # Jika speedtest gagal, maka mengirimkan pesan notifikasi
-    MSG="SERVER RUSAK MEK"
+    MSG="SERVER RUSAK MEK
+BTS AMPAS GAUSAH BELAGU
+KOCOK AJA TUH KONTOL"
 fi
 
 # Mengirim pesan ke akun Telegram pribadi

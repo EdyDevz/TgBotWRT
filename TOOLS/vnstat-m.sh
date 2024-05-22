@@ -17,11 +17,11 @@ get_daily_bandwidth() {
     total=$(echo "$vnstat_output" | awk '{print $8, $9}')
     
     echo "
-❏ BANDWIDTH MONTHLY REPORT 📊
+❏ BANDWIDTH MONTHLY USAGE
 └ DOWNLOAD: $download
 └ UPLOAD: $upload
 └ TOTAL: $total
-└ LAST UPDATE: $(date +'%d-%m-%Y %I:%M %p')
+└ DATE: $(date +'%d-%m-%Y %I:%M %p')
 └ CHECKED BY EDY DEVELOPER
 "
 }

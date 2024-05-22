@@ -11,7 +11,7 @@ fi
 
 # Generate the system status report
 MSG="
-❏ VNSTAT 📊
+❏ VNSTAT MONITOR
 └ /vnstat -d - DAILY DATA USAGE
 └ /vnstat -m - MONTHLY DATA USAGE
 └ /vnstat -y - YEARLY DATA USAGE

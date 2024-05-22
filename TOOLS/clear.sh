@@ -38,7 +38,7 @@ date=$(date "+%d-%m-%Y %I:%M %p")
 MSG="
 ❏ RAM SUPERCHARGE 🚀
 $ram_status
-└LAST UPDATE: $date
+└ DATE: $date
 "
 
 # Mengirim pesan ke akun Telegram pribadi

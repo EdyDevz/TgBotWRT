@@ -15,7 +15,7 @@ messages=()
 failed=0
 for server in "${SERVER[@]}"
 do
-    result=$(ping -c 1 $SERVER)
+    result=$(ping -c 1 -w 10 $SERVER)
     if [ $? -eq 0 ]; then
         ping=$(echo "$result" | awk -F'/' 'END {printf "%.0f", $5}')
         messages+=("❏ PING❗$ping ms..")
