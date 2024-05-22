@@ -36,7 +36,6 @@ do
     # Periksa hasil ping
     if [ $? -eq 0 ]; then
         response_time=$(echo "$result" | awk -F'/' 'END {printf "%.0f", $5}')  # Memformat tanpa desimal
-        emoji="🌐"
         case "$server_alias" in
             "└ Cloudflare")
                 ;;
