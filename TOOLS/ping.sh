@@ -10,7 +10,7 @@ else
 fi
 
 # Daftar server yang akan di-ping beserta alias-aliasnya
-servers=("1.1.1.1:└ Cloudflare" "8.8.8.8:└ Google DNS" "google.com:└ Google" "facebook.com:└ Facebook" "instagram.com:└ Instagram" "twitter.com:└ Twitter" "youtube.com:└ YouTube" "github.com:└ GitHub" "pornhub.com:└ Bokep")
+servers=("1.1.1.1:└ Cloudflare" "8.8.8.8:└ Google DNS" "google.com:└ Google" "facebook.com:└ Facebook" "instagram.com:└ Instagram" "twitter.com:└ Twitter" "youtube.com:└ YouTube" "github.com:└ GitHub" "pornhub.com:└ PornHUB")
 
 # Inisialisasi variabel untuk menyimpan status setiap server
 status_messages=()
@@ -31,41 +31,35 @@ do
     server_ip="${server_parts[0]}"
     server_alias="${server_parts[1]}"
     
-    result=$(ping -c 1 -W 5 $server_ip)  # Mengirim satu paket ICMP dan timeout dalam 5 detik
+    result=$(ping -c 1 -W 1 $server_ip)  # Mengirim satu paket ICMP dan timeout dalam 1 detik
     
     # Periksa hasil ping
     if [ $? -eq 0 ]; then
         response_time=$(echo "$result" | awk -F'/' 'END {printf "%.0f", $5}')  # Memformat tanpa desimal
         emoji="🌐"
         case "$server_alias" in
+            "└ Cloudflare")
+                ;;
             "└ Google DNS")
-                emoji="🔍"
                 ;;
             "└ Google")
-                emoji="🔵"
                 ;;
             "└ Facebook")
-                emoji="📘"
                 ;;
             "└ Instagram")
-                emoji="❤️"
                 ;;
             "└ Twitter")
-                emoji="🐦"
                 ;;
             "└ YouTube")
-                emoji="📺"
                 ;;
             "└ GitHub")
-                emoji="🐱"
                 ;;
-            "└ Bokep")
-                emoji="🤤"
+            "└ PornHUB")
                 ;;
         esac
-        status_messages+=("$server_alias $emoji ☞ $response_time ms")
+        status_messages+=("$server_alias ☞ $response_time ms")
     else
-        status_messages+=("$server_alias $emoji ☞ ❌")
+        status_messages+=("$server_alias ☞ ❌")
         failed_count=$((failed_count + 1))
     fi
 done
