@@ -64,6 +64,4 @@ echo "
 ╚════════════════════════════════════════════════════════╝"
 echo "[+] THAKS FOR USE MY TOOLS & SUPPORT ME :)"
 service edy enable
-tmux
-service edy start
-
+launchbot
