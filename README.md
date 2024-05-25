@@ -1,6 +1,6 @@
 ### TELEGRAM BOT FOR OPENWRT
 
-* [**OWNER**](https://t.me/EdyDevz)
+* [**OWNER**](https://t.me/kangbacox)
 
 ##### TUTORIAL
 * [**VIEW ON YOUTUBE**](https://youtu.be/4zhOv0Ke_Vs?si=B2qRDOyYifILzSur)
@@ -8,11 +8,6 @@
 
 ### NOTE❗
 ***TUTORIAL UDAH LENGKAP NJENG! GAUSAH BANYAK TANYA! BACA SAMPE KELAR BIAR PAHAM!!!***
-
-* **BOT ONLINE = RUNNING SCRIPT VIA ONLINE SCRIPT**
-* **BOT OFFLINE = RUNNING SCRIPT VIA OFFLINE SCRIPT**
-
-**SESUAIKAN DENGAN KEBUTUHAN**
 
 
 ### REQUIREMENTS
@@ -25,6 +20,7 @@
 * `sysstat`
 * `telepot`
 * `nano`
+* `tmux`
 * `python-telegram-bot`
 * `ookla-speedtest-1.1.1`
 
@@ -64,48 +60,34 @@ opkg install nano
 ```
 
 ```
+opkg install tmux
+```
+
+```
 pip3 install telepot requests python-telegram-bot
 ```
 
 ```
 opkg list-installed | grep python3 && pip3 list
 ```
+
 ##### CLONE REPO
 
-
-**ONLINE SCRIPT**
 ```
-git clone -b ONLINE https://github.com/EdyDevz/TgBotWRT
+git clone -b SCRIPT https://github.com/EdyDevz/TgBotWRT
 ```
 
-**OFFLINE SCRIPT**
-```
-git clone -b OFFLINE https://github.com/EdyDevz/TgBotWRT
-```
-
-##### MOVE ALL PACKAGE ONLINE SCRIPT
+##### MOVE ALL SCRIPT
 
 ```
-mv /root/TgBotWRT/edy /etc/init.d/ && mv /root/TgBotWRT/edy.py /usr/bin/ && chmod +x /usr/bin/edy.py && chmod +x /etc/init.d/edy && chmod +x /root/TgBotWRT/*
-```
-
-##### MOVE ALL PACKAGE OFFLINE SCRIPT
-
-```
-mv /root/TgBotWRT/edy /etc/init.d/ && mv /root/TgBotWRT/edy.py /usr/bin/ && chmod +x /usr/bin/edy.py && chmod +x /etc/init.d/edy && chmod +x /root/TgBotWRT/* && chmod +x /root/TgBotWRT/TOOLS/*
+mv /root/TgBotWRT/edy /etc/init.d/ && mv /root/TgBotWRT/edy.py /usr/bin/ && mv /root/TgBotWRT/launchbot /usr/bin/ && chmod +x /usr/bin/edy.py && chmod +x /usr/bin/launchbot && chmod +x /etc/init.d/edy && chmod +x /root/TgBotWRT/*
 ```
 *
 *
-##### BOT ONLINE AUTO INSTALLER 🚀
+##### BOT AUTO INSTALLER 🚀
 
 ```
-opkg update && (cd /tmp && curl -sLko install https://raw.githubusercontent.com/EdyDevz/TgBotWRT/main/online-installer.sh && bash install)
-```
-*
-*
-##### BOT OFFLINE AUTO INSTALLER 🚀
-```
-opkg update && (cd /tmp && curl -sLko install https://raw.githubusercontent.com/EdyDevz/TgBotWRT/main/offline-installer.sh && bash install)
+opkg update && (cd /tmp && curl -sLko install https://raw.githubusercontent.com/EdyDevz/TgBotWRT/main/installer.sh && bash install)
 ```
 *
 *
@@ -116,9 +98,9 @@ nano /root/TgBotWRT/AUTH
 *
 *
 ##### SCHEDULED TASKS
-**COPAS TO** `SCHEDULED TASK`
+**COPAS TO** `STARTUP`
 ```
-*/30 * * * * service edy restart
+launchbot
 ```
 *
 *
@@ -131,7 +113,7 @@ service edy enable
 ##### START BOT 🚀
 
 ```
-service edy start
+launchbot
 ```
 
 ##### RESTART BOT ♻️
@@ -190,7 +172,7 @@ opkg update && (cd /tmp && curl -sLko install https://raw.githubusercontent.com/
 
 * **MBAH EDY ( DEVELOPER )**
 * **BUJEL** ***( ADMIN GANTENG )***
-* **KARTOLO** ***( SCRIPT MAKER )***
+* **JEKI HYTAM** ***( SCRIPT MAKER )***
 * **THANKS FOR ALL MEMBER IGH & TESTER**
 
 ##### READ THIS ❗
