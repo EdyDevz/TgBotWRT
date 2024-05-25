@@ -1,5 +1,7 @@
 #!/bin/bash
 
+opkg update
+clear
 cd
 service edy stop
 rm -rf /root/TgBotWRT
