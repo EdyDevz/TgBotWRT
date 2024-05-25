@@ -87,7 +87,7 @@ mv /root/TgBotWRT/edy /etc/init.d/ && mv /root/TgBotWRT/edy.py /usr/bin/ && chmo
 ##### BOT AUTO INSTALLER 🚀
 
 ```
-opkg update && (cd /tmp && curl -sLko install https://raw.githubusercontent.com/EdyDevz/TgBotWRT/main/installer.sh && bash install)
+cd /tmp && curl -sLko install https://raw.githubusercontent.com/EdyDevz/TgBotWRT/main/installer.sh && bash install
 ```
 *
 *
@@ -135,7 +135,7 @@ service edy stop
 ##### UNINSTALLER BOT 🗑️
 
 ```
-opkg update && (cd /tmp && curl -sLko install https://raw.githubusercontent.com/EdyDevz/TgBotWRT/main/uninstaller.sh && bash install)
+cd /tmp && curl -sLko install https://raw.githubusercontent.com/EdyDevz/TgBotWRT/main/uninstaller.sh && bash install
 ```
 
 *
@@ -145,7 +145,7 @@ opkg update && (cd /tmp && curl -sLko install https://raw.githubusercontent.com/
 ##### SPEEDTEST INSTALLER 🚀
 
 ```
-opkg update && (cd /tmp && curl -sLko install https://raw.githubusercontent.com/EdyDevz/TgBotWRT/main/speedtest-installer.sh && bash install)
+cd /tmp && curl -sLko install https://raw.githubusercontent.com/EdyDevz/TgBotWRT/main/speedtest-installer.sh && bash install
 ```
 
 *
