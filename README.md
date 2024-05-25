@@ -80,7 +80,7 @@ git clone -b SCRIPT https://github.com/EdyDevz/TgBotWRT
 ##### MOVE ALL SCRIPT
 
 ```
-mv /root/TgBotWRT/edy /etc/init.d/ && mv /root/TgBotWRT/edy.py /usr/bin/ && mv /root/TgBotWRT/launchbot /usr/bin/ && chmod +x /usr/bin/edy.py && chmod +x /usr/bin/launchbot && chmod +x /etc/init.d/edy && chmod +x /root/TgBotWRT/*
+mv /root/TgBotWRT/edy /etc/init.d/ && mv /root/TgBotWRT/edy.py /usr/bin/ && chmod +x /usr/bin/edy.py && chmod +x /etc/init.d/edy && chmod +x /root/TgBotWRT/*
 ```
 *
 *
@@ -97,10 +97,10 @@ nano /root/TgBotWRT/AUTH
 ```
 *
 *
-##### STARTUP
-**COPAS TO** `STARTUP`
+##### AUTO RESTART BOT (OPSIONAL)
+**COPAS TO** `SCHEDULED TASKS`
 ```
-launchbot
+*/30 * * * * service edy restart
 ```
 *
 *
@@ -113,7 +113,9 @@ service edy enable
 ##### START BOT 🚀
 
 ```
-launchbot
+tmux
+service edy start
+
 ```
 
 ##### RESTART BOT ♻️
