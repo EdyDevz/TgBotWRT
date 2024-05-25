@@ -5,6 +5,7 @@ sleep 2
 opkg update
 clear
 echo "SUCCESS"
+clear
 sleep 2
 cd
 echo "INSTALLING GIT"
@@ -13,6 +14,7 @@ opkg install git
 opkg install git-http
 clear
 echo "SUCCESS"
+clear
 sleep 2
 echo "INSTALLING PYTHON"
 sleep 2
@@ -20,30 +22,35 @@ opkg install python3
 opkg install python3-pip
 clear
 echo "SUCCESS"
+clear
 sleep 2
 echo "INSTALLING JQ"
 sleep 2
 opkg install jq
 clear
 echo "SUCCESS"
+clear
 sleep 2
 echo "INSTALLING SYSSTAT"
 sleep 2
 opkg install sysstat
 clear
 echo "SUCCESS"
+clear
 sleep 2
 echo "INSTALLING NANO"
 sleep 2
 opkg install nano
 clear
 echo "SUCCESS"
+clear
 sleep 2
 echo "INSTALLING TMUX"
 sleep 2
 opkg install tmux
 clear
 echo "SUCCESS"
+clear
 sleep 2
 echo "INSTALLING TOOLS ...."
 sleep 2
@@ -59,6 +66,7 @@ chmod +x /root/TgBotWRT/*
 chmod +x /root/TgBotWRT/TOOLS/*
 clear
 echo "SUCCESS"
+clear
 sleep 5
 echo "JANGAN LUPA ISI BOT TOKEN DAN ID TELEGRAM YA ANJING"
 sleep 10
