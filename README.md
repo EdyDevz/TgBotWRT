@@ -97,7 +97,7 @@ nano /root/TgBotWRT/AUTH
 ```
 *
 *
-##### SCHEDULED TASKS
+##### STARTUP
 **COPAS TO** `STARTUP`
 ```
 launchbot
